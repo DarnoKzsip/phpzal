@@ -70,7 +70,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <body class ="body">
     <h1 class = "container">Dodawanie zadań</h1>
-    <h2 ><a class ="anotherText" href = "welcome.php">Powrot do poprzedniej strony</a></h2>
+    <div class="topnav">
+       <a href="welcome.php">Powrot do poprzedniej strony</a>
+       <a href="logout.php">Wyloguj</a>
+     </div>
+    
 
        <div class ="dodawanie">
          <form action = "" method = "post">

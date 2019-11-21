@@ -38,8 +38,13 @@ $result2 = mysqli_query($db,$sql2);
 
    <body class ="body">
       <h1 class = "container">Welcome <?php echo $login_session; ?> user</h1>
-      <h2 ><a class ="anotherText" href = "dodajzadanie.php">Dodawanie zadań</a></h2>
-      <h2><a class ="anotherText" href = "logout.php">Wyloguj</a></h2>
+      <!--<h2 ><a class ="anotherText" href = "dodajzadanie.php">Dodawanie zadań</a></h2>
+      <h2><a class ="anotherText" href = "logout.php">Wyloguj</a></h2>-->
+      <div class="topnav">
+       <a href="welcome.php">Pokaż zadania</a>
+       <a href="dodajzadanie.php">Dodawanie zadań</a>
+       <a href="logout.php">Wyloguj</a>
+     </div>
       <?php
       while($row3 = mysqli_fetch_assoc($result2)){
          if ($keyUser[0] == 0) {
@@ -68,7 +73,9 @@ $result2 = mysqli_query($db,$sql2);
 
 
       ?>
-      
+      <div class="footer">
+  <h2>Footer</h2>
+</div>
       
    </body>
 
