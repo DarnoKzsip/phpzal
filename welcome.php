@@ -38,8 +38,7 @@ $result2 = mysqli_query($db,$sql2);
 
    <body class ="body">
       <h1 class = "container">Welcome <?php echo $login_session; ?> user</h1>
-      <!--<h2 ><a class ="anotherText" href = "dodajzadanie.php">Dodawanie zadań</a></h2>
-      <h2><a class ="anotherText" href = "logout.php">Wyloguj</a></h2>-->
+      
       <div class="topnav">
        <a href="welcome.php">Pokaż zadania</a>
        <a href="dodajzadanie.php">Dodawanie zadań</a>
