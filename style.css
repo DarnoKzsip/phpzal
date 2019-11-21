@@ -112,6 +112,8 @@ min-width:200px; // Suppose you want minimum width of 1000px
   padding: 20px;
   resize: both;
   overflow: auto;
+  background: url(zdjecie1.jpg) no-repeat center fixed; 
+  background-size: cover;
 }
 .column {
     display: inline-block;
