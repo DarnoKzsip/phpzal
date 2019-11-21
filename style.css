@@ -1,18 +1,18 @@
 .login {
-    
-    
+
+
     width: 300px;
     border: 5px #ffffff9c;
     border-radius: 5px;
     border-style: ridge;
     margin: auto;
     margin-top: 80px;
-    background: url(zdjecie1.jpg) no-repeat center fixed; 
+    background: url(zdjecie1.jpg) no-repeat center fixed;
   background-size: cover;
-        
+
 }
 .loginSign {
-    
+
     background-color: #262020e3;
     color: #FFFFFF;
     padding: 3px;
@@ -24,31 +24,31 @@
 .box1 {
     border: 2px solid black;
     border-radius: 5px;
-    
+
 }
 .box2 {
     border: 2px solid black;
     margin-left: 6px;
     border-radius: 5px;
-    
+
 }
 .box3 {
     border: 2px solid black;
     border-radius: 5px;
-    
-    
+
+
 }
 .box4 {
     border: 2px solid black;
     border-radius: 5px;
     width: 300px;
     height: 100px;
-    
-    
+
+
 }
 .classNameText {
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 .anotherText{
     font-family: "Times New Roman", Times, serif;
@@ -96,26 +96,29 @@
     background-color: #b0a6a7;
     color: #ea1818;;
     padding: 3px;
-    
-    
-    
+    float: left;
+    margin: 10px;
+
+
+
 }
 .btn-link2 {
     background-color: #eee1e3;
     color: #333333;;
     padding: 3px;
     font-size:20px;
-    
+
 }
 .body {
 min-width:200px; // Suppose you want minimum width of 1000px
-   _width: expression( document.body.clientWidth > 200 ? "1000px" : "auto" );
+   _width: expression( document.body.clientWidth > 200 ? "1000px" : "auto" ); /*TO TRZEBA ZROBIĆ W TYCH LINIACH PONIŻEJ TO DO WYWALENIA */
   /*background-color: #f0dfbd9c;*/
   padding: 20px;
   resize: both;
   overflow: auto;
-  background: url(zdjecie1.jpg) no-repeat center fixed; 
+  background: url(zdjecie1.jpg) no-repeat center fixed;
   background-size: cover;
+
 }
 .column {
     display: inline-block;
@@ -128,52 +131,83 @@ min-width:200px; // Suppose you want minimum width of 1000px
     box-sizing: border-box;
     margin-top:20px;
     margin-right:20px;
+    min-height: 200px;
+    min-width: 350px;
   /*column-count: 3;
   column-gap: 30px;
   column-rule-style: solid;*/
 }
 .wiersz {
-    
+
     margin-left: 10px;
     margin-top: 20px;
-    
+
 }
 .dodawanie{
     margin-left: 40px;
     margin-top:40px;
     font-family: Arial, Helvetica, sans-serif;
-    
-    
+
+
 }
 .footer {
-  padding: 20px;
+  padding: 1px;
   text-align: center;
   background: #ddddddb3;
   margin-top:20px;
+  width: 80%;
+  margin-left: 10%;
 }
-    
 
 
+/*TE LINIE PO COŚ ISTNIEJĄ A NIE SĄ DO WYKOMENTOWANIA :) */
 
 /* Smartphones (portrait and landscape) ---------- */
 /*@media screen and (min-width: 320px) and (max-width: 480px){
-        
-   .container {
-    
+
+.body {
+min-width:200px; // Suppose you want minimum width of 1000px
+   _width: expression( document.body.clientWidth > 200 ? "1000px" : "auto" ); /*TO TRZEBA ZROBIĆ W TYCH LINIACH PONIŻEJ TO DO WYWALENIA */
+  /*background-color: #f0dfbd9c;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+  background: url(ZDJECIE ZMNIEJSZONE POWINNO BYĆ) no-repeat center fixed;
+  background-size: cover;
+
+}
+
 }
 }*/
 /* Smartphones (portrait) ---------- */
 /*@media screen and (min-width: 100px) and (max-width: 320px){
      .container {
-    
+
 }
 }*/
 /* Smartphones (landscape) ---------- */
 /*@media screen and (min-width: 321px) and (max-width: 600px){
  .container {
-        
+
     }
 }*/
+
+.glowny {
+
+  margin: 0 auto;
+  width: 80%;
+  background: red;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: gray;
+  opacity: 0.8;
+
+
+}
+.glownysrodek{
+  width: 80%;
+  margin: auto;
+}
 .container {
     margin-top:45px;
     margin: 0 auto;
@@ -186,7 +220,7 @@ min-width:200px; // Suppose you want minimum width of 1000px
 /* Mobile phones (portrait and landscape) ---------- */
 /*@media screen and (max-width: 767px){
     .container {
-       
+
     }
 }*/
 /* Tablets and iPads (portrait and landscape) ---------- */
@@ -200,13 +234,13 @@ min-width:200px; // Suppose you want minimum width of 1000px
   padding: 12px 20px;
   box-sizing: border-box;
   resize: none;
-  
+
  }
  .column {
     display: inline-table;
     margin-top: 20px;
     margin-left: 20px;
- 
+
 }
 .body {
 min-width:200px; // Suppose you want minimum width of 1000px
@@ -215,7 +249,7 @@ min-width:200px; // Suppose you want minimum width of 1000px
   padding: 20px;
   resize: both;
   overflow: auto;
-  background: url(zdjecie1.jpg) no-repeat center fixed; 
+  background: url(zdjecie1.jpg) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -224,12 +258,12 @@ min-width:200px; // Suppose you want minimum width of 1000px
 /* Low resolution desktops and laptops ---------- */
 /*@media screen and (min-width: 1024px) {
     .container {
-        
+
     }
 }*/
 /* High resolution desktops and laptops ---------- */
 /*@media screen and (min-width: 1280px) {
     .container {
-        
+
     }
 }

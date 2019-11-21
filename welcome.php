@@ -27,24 +27,14 @@ $result2 = mysqli_query($db,$sql2);
 //$row2 = mysqli_fetch_array($result2);
 //$row2 = mysqli_fetch_assoc($result2);
 
+//$bar = include 'toppage_tpl.php';
 ?>
 
-<html>
 
-   <head>
-      
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-
-   <body class ="body">
-      <h1 class = "container">Welcome <?php echo $login_session; ?> user</h1>
-      
-      <div class="topnav">
-       <a href="welcome.php">Pokaż zadania</a>
-       <a href="dodajzadanie.php">Dodawanie zadań</a>
-       <a href="logout.php">Wyloguj</a>
-     </div>
       <?php
+      include 'toppage_tpl.php';
+      echo '<div class = "glowny">';
+      echo '<div class = "glownysrodek">';
       while($row3 = mysqli_fetch_assoc($result2)){
          if ($keyUser[0] == 0) {
          echo '<div class = "column">' .'User: ' . $username_array[$row3["user"]-1]. '<br/>';
@@ -52,10 +42,10 @@ $result2 = mysqli_query($db,$sql2);
          echo '<br/>';
          echo 'Opis zadania: ' .$row3["opis"];
          echo '<br/>';
-         
-         
+
+
          echo '<form action="modify.php" method="post" class = "wiersz"><button type="submit" name="edytuj" value='.$row3["id"].' class="btn-link">Modyfikuj</button></form>';
-         
+
          echo '<form action="delete.php" method="post" class = "wiersz"><button type="submit" name="usun" value='.$row3["id"].' class="btn-link">Usuń</button></form>';
          echo '<br/></div>';
          }
@@ -69,13 +59,16 @@ $result2 = mysqli_query($db,$sql2);
             echo '<br/></div>';
          }
       }
-
-
+      echo '</div>';
+      echo '</div>';
+      include 'bottompage_tpl.php';
       ?>
+
+      <!--
       <div class="footer">
   <h2>Footer</h2>
 </div>
-      
+-->
    </body>
 
 </html>
