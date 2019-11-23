@@ -57,8 +57,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
    /*
    $sql = "SELECT id FROM users WHERE user = '$myusername' and pass = '$mypassword'";
 
-
+    
                 */
+                $Welcome_Text = "Dodawanie zadań";
                 include 'toppage_tpl.php';
                 echo '<div class = "glowny">';
                 echo '<div class = "glownysrodek">';

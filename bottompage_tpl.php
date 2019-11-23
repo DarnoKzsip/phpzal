@@ -1,3 +1,3 @@
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Created by Nienajadło and Rękawek</h2>
 </div>

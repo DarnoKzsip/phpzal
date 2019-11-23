@@ -7,7 +7,7 @@
    </head>
 
    <body class ="body">
-      <h1 class = "container">Welcome <?php echo $login_session; ?> user</h1>
+      <h1 class = "container"><?php echo $Welcome_Text ?></h1>
 
       <div class="topnav">
        <a href="welcome.php">Pokaż zadania</a>

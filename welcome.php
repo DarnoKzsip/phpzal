@@ -32,6 +32,7 @@ $result2 = mysqli_query($db,$sql2);
 
 
       <?php
+      $Welcome_Text = "Welcome ".$login_session;
       include 'toppage_tpl.php';
       echo '<div class = "glowny">';
       echo '<div class = "glownysrodek">';

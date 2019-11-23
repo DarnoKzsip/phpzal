@@ -1,6 +1,6 @@
 <?php
 include('session.php');
-
+$Welcome_Text = "Usuwanie zadań";
 
 include 'toppage_tpl.php';
 echo '<div class = "glowny">';
