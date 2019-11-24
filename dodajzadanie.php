@@ -59,6 +59,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
                 */
+                $Welcome_Text = "Dodawanie zadań";
+                include 'toppage_tpl.php';
+               echo '<div class = "glowny">';
+                echo '<div class = "glownysrodek">';
  ?>
  <html>
 
@@ -69,10 +73,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
 
     <body class ="body">
-    <h1 class = "container">Dodawanie zadań</h1>
-    <div class="topnav">
-       <a href="welcome.php">Powrot do poprzedniej strony</a>
-       <a href="logout.php">Wyloguj</a>
+    
      </div>
     
 
@@ -83,5 +84,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>Autor :</label><input type = "text" name = "autor" class = "box3" value="<?php echo $login_session;?>" /><br/><br />
             <input type = "submit" value = " Dodaj " class = "btn-link2"/><br />
          </form>
+         </div>
+         </div>
+         </div>
+         <?php
+         include 'bottompage_tpl.php'; ?>
        </body>
 </html>

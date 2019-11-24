@@ -29,22 +29,12 @@ $result2 = mysqli_query($db,$sql2);
 
 ?>
 
-<html>
 
-   <head>
-      
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-
-   <body class ="body">
-      <h1 class = "container">Welcome <?php echo $login_session; ?> user</h1>
-      
-      <div class="topnav">
-       <a href="welcome.php">Pokaż zadania</a>
-       <a href="dodajzadanie.php">Dodawanie zadań</a>
-       <a href="logout.php">Wyloguj</a>
-     </div>
       <?php
+      $Welcome_Text = "Welcome ".$login_session;
+            include 'toppage_tpl.php';
+      echo '<div class = "glowny">';
+      echo '<div class = "glownysrodek">';
       while($row3 = mysqli_fetch_assoc($result2)){
          if ($keyUser[0] == 0) {
          echo '<div class = "column">' .'User: ' . $username_array[$row3["user"]-1]. '<br/>';
@@ -69,13 +59,12 @@ $result2 = mysqli_query($db,$sql2);
             echo '<br/></div>';
          }
       }
-
-
-      ?>
-      <div class="footer">
+              echo '</div>';
+      echo '</div>';
+        include 'bottompage_tpl.php';
+    ?>
+  <!--      <div class="footer">
   <h2>Footer</h2>
-</div>
+</div>-->
       
-   </body>
-
-</html>
+ 
