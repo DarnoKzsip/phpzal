@@ -146,10 +146,12 @@ min-width:200px; // Suppose you want minimum width of 1000px
     
 }
 .footer {
-  padding: 20px;
+  padding: 1px;
   text-align: center;
   background: #ddddddb3;
   margin-top:20px;
+  width: 80%;
+  margin-left: 10%;
 }
     
 
