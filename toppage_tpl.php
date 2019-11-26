@@ -9,7 +9,7 @@
       <h1 class = "container"><?php echo $Welcome_Text ?></h1>
 
       <div class="topnav">
-      <a href="welcome.php">Opis projektu</a>
+      <a href="infosite.php">Opis projektu</a>
        <a href="welcome.php">Pokaż zadania</a>
        <a href="dodajzadanie.php">Dodawanie zadań</a>
        <a href="logout.php">Wyloguj</a>

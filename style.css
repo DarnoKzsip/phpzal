@@ -73,6 +73,25 @@
   text-decoration: none;
 
 }
+.text_1{
+    font-family: "Times New Roman", Times, serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    
+}
+.text_2{
+    font-family: "Times New Roman", Times, serif;
+    color: red;
+    text-align:center;
+    font-size: 24px;
+    
+}
+.info{
+    font-variant: small-caps;
+    
+    color: white;
+    
+}
 
 /* Change color on hover */
 .topnav a:hover {
@@ -93,8 +112,8 @@
     margin-top: 10px;
 }
 .btn-link {
-    background-color: #b0a6a7;
-    color: #ea1818;;
+    background-color: #d3d5a8d1;
+    color: #d93e0f;;
     padding: 3px;
     
     
@@ -151,29 +170,6 @@ min-width:200px; // Suppose you want minimum width of 1000px
   background: #ddddddb3;
   margin-top:20px;
 }
-    
-
-
-
-/* Smartphones (portrait and landscape) ---------- */
-/*@media screen and (min-width: 320px) and (max-width: 480px){
-        
-   .container {
-    
-}
-}*/
-/* Smartphones (portrait) ---------- */
-/*@media screen and (min-width: 100px) and (max-width: 320px){
-     .container {
-    
-}
-}*/
-/* Smartphones (landscape) ---------- */
-/*@media screen and (min-width: 321px) and (max-width: 600px){
- .container {
-        
-    }
-}*/
 .container {
     margin-top:45px;
     margin: 0 auto;
@@ -200,18 +196,10 @@ min-width:200px; // Suppose you want minimum width of 1000px
   width: 80%;
   margin: auto;
 }
-/* Mobile phones (portrait and landscape) ---------- */
-/*@media screen and (max-width: 767px){
-    .container {
-       
-    }
-}*/
-/* Tablets and iPads (portrait and landscape) ---------- */
-@media screen and (max-width: 768px) {
-    .container {
-        background-color: #0ab7dfb3;
-    }
-    .box4 {
+
+@media screen and (min-width: 1px) and (max-width: 765px) {
+
+.box4 {
     width: 177px;
   height: 47px;
   padding: 12px 20px;
@@ -219,34 +207,48 @@ min-width:200px; // Suppose you want minimum width of 1000px
   resize: none;
   
  }
- .column {
+    .column {
     display: inline-table;
     margin-top: 20px;
     margin-left: 20px;
  
 }
-.body {
+    .body {
 min-width:200px; // Suppose you want minimum width of 1000px
-   _width: expression( document.body.clientWidth > 200 ? "1000px" : "auto" );
+  /* _width: expression( document.body.clientWidth > 200 ? "1000px" : "auto" );
   /*background-color: #f0dfbd9c;*/
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+  background: url(image1.png) no-repeat center fixed; 
+  background-size: cover;
+}
+}
+@media screen and (min-width: 1025px) {
+	.body {
+  /*min-width:200px; // Suppose you want minimum width of 800px
+   _width: expression( document.body.clientWidth > 200 ? "800px" : "auto" );
+   */
+  background-color: #f0dfbd9c;
   padding: 20px;
   resize: both;
   overflow: auto;
   background: url(zdjecie1.jpg) no-repeat center fixed; 
   background-size: cover;
 }
-
-
+	}
+@media screen and (min-width: 766px) and (max-width: 1024px) {
+	.body {
+  /*min-width:200px; // Suppose you want minimum width of 800px
+   _width: expression( document.body.clientWidth > 200 ? "800px" : "auto" );
+   */
+  background-color: #f0dfbd9c;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+  background: url(image2.jpg) no-repeat center fixed; 
+  background-size: cover;
 }
-/* Low resolution desktops and laptops ---------- */
-/*@media screen and (min-width: 1024px) {
-    .container {
-        
-    }
-}*/
-/* High resolution desktops and laptops ---------- */
-/*@media screen and (min-width: 1280px) {
-    .container {
-        
-    }
+	
 }
+
